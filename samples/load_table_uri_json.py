@@ -30,7 +30,7 @@ def load_table_uri_json(table_id):
         ],
         source_format=bigquery.SourceFormat.NEWLINE_DELIMITED_JSON,
     )
-    uri = "gs://cloud-samples-data/bigquery/us-states/us-states.json"
+    uri = "gs://derwin_bucket/transcripts/Call with Stacey-031022.wav-20220315021420.json"
 
     load_job = client.load_table_from_uri(
         uri,
